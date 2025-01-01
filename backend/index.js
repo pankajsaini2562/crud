@@ -8,7 +8,7 @@ const __dirname = path.resolve();
 const app = express();
 app.use(cors());
 app.use(express.json());
-aap.use(express.static(path.join(__dirname, "/frontend/dist")));
+app.use(express.static(path.join(__dirname, "/frontend/dist")));
 app.listen(4000, () => {
   console.log("server is running succesfully");
 });
